@@ -1,0 +1,753 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+  font-family: "Poppins", sans-serif;
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+           /* Narbar Css Start  */
+
+
+
+    bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(239, 239, 239);
+    height: 60px;
+}
+.logo{
+    width: 190px;
+    background: url('../Pictures/nike-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+.logo img{
+    width: 100%;
+}
+.links{
+    height: 120px;
+}
+.links ul{
+    display: flex;
+}
+.links ul li{
+    list-style: none;
+    margin: 24px 20px;
+    transition: all 1s;
+}
+.links ul li:hover{
+    transform: scale(1.1);
+    
+}
+.links ul li a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    display: flex;
+    margin-right: 50px;
+}
+.btn img{
+    width: 43px;
+    height: 40px;
+    margin-top: 12px;
+}
+/* #btn{
+    margin-top: 12px;
+    padding: .2rem 1rem;
+    border: none;
+    background-color: black;
+    height: 40px;
+    color: white;
+    border-radius: 1rem;
+    margin-right: 10px;
+}
+#btn:hover{
+    background-color: rgba(0, 0, 0, 0.306);
+    transition: 0.5s;
+} */
+
+
+
+             /* Navbar Css End  */
+
+
+             /* Form css start  */
+
+
+#popup{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.797);
+    width: 100%;
+    height: 100vh;
+    z-index: 28;
+}             
+#popup-b{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.797);
+    width: 100%;
+    height: 100vh;
+    z-index: 28;
+}             
+.form-1{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    width: 400px;
+    border: 1px solid black;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(210, 206, 206, 0.384);
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 25px ;
+}
+.form-1 h1{
+    color: white;
+    font-size: 2rem;
+    border-bottom: 4px solid rgba(225, 225, 225, 0.5);
+    margin: 20px;
+}
+.form-1 p{
+    color: white;
+    padding: 10px 0;
+}
+.form-1 a{
+    color: white;
+}
+.form{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 400px;
+    border: 1px solid black;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(210, 206, 206, 0.384);
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 25px ;
+}
+.form h1{
+    color: white;
+    font-size: 2rem;
+    border-bottom: 4px solid rgba(225, 225, 225, 0.5);
+    margin: 20px;
+}
+.form p{
+    color: white;
+    padding: 10px 0;
+}
+.form a{
+    color: white;
+}
+.box{
+    padding: 12px;
+    margin: 5px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: -3px -3px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+}
+.submit{
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -3px -3px  rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: rgba(225, 225, 225, 0.1);
+    color: white;
+}
+#btn-1{
+    position: fixed;
+    bottom: 20px;
+    left: 500px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 15%;
+    background-color: rgba(210, 206, 206, 0.384);
+    box-shadow: inset -3px -3px  rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+}
+#btn-1:hover{
+    cursor: pointer;
+    background-color: rgba(225, 225, 225, 0.1);
+    color: white;
+    transition: 0.5s;
+
+}
+#btn-2{
+    position: fixed;
+    bottom: 20px;
+    left: 500px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 15%;
+    background-color: rgba(210, 206, 206, 0.384);
+    box-shadow: inset -3px -3px  rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+}
+#btn-2:hover{
+    cursor: pointer;
+    background-color: rgba(225, 225, 225, 0.1);
+    color: white;
+    transition: 0.5s;
+
+}
+             /* Form css end  */
+
+             /* Section A Css Start  */
+
+
+.section-a{
+    text-align: center;
+    height: 370px;
+    margin-top: 20px;
+    padding-top: 60px;
+}
+.section-a h1{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.section-a p{
+    padding: 20px 0;
+}
+.section-a button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 1rem;
+    border: none;
+}
+.section-a button:hover{
+    background-color: rgba(0, 0, 0, 0.306);
+}
+.section-a button:hover a{
+    color: black;
+}
+.section-a button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+           /* Section A CSS End  */
+
+           /* Section B CSS Start  */
+
+
+
+.section-b{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+#sec-b {
+    margin-left: 30px;
+}
+.div-a{
+    background: url('../Pictures/secb-imga.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 30%;
+}
+
+.div-b{
+    background: url('../Pictures/secb-imgb.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 30%;
+}
+
+.div-c{
+    background: url('../Pictures/secb-imgc.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 30%;
+}
+
+.section-b button{
+    margin-top: 350px;
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 1rem;
+}
+.section-b button a{
+    text-decoration: none;
+    color: black;
+}
+.section-b button:hover{
+    background-color: rgba(0, 0, 0, 0.306);
+}
+
+
+
+          /* Section B CSS End  */
+
+
+         /* Secton C CSS Start  */
+
+
+.section-c{
+    width: 95%;
+    margin: 0 30px;
+    
+} 
+.img{
+    overflow-x: scroll;
+    display: flex;  
+}    
+.section-c h1{
+    margin-left: 30px;
+    padding: 20px 0;
+} 
+.section-c img{
+    width: 320px;
+    height: 350px;
+    margin: 0 5px;
+}
+
+
+        /* Secton C CSS End  */
+
+        /* Secton D CSS Start  */
+
+
+.section-d{
+    width: 100%;
+}
+.section-d h1{
+    
+    margin-left: 27px;
+}
+.section-d img{
+    width: 95%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 27px;
+}
+
+       /* Secton D CSS Start  */
+
+
+
+
+
+
+       
+       /* Section F css start  */
+
+.section-f{
+    background: url('../Pictures/main.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0px 30px;
+}   
+.sub-sec-f{
+    background-color: rgba(84, 83, 83, 0.509);
+    height: 100vh;
+    padding: 200px 50px;
+    text-align: center;
+}    
+.section-f h1{
+    color: white;
+    font-size: 40px;
+    padding: 10px 0;
+}
+.section-f p{
+    color: white;
+    font-size: 20px;
+}
+
+
+     /* Section F CSS end  */
+
+
+
+
+
+
+
+/* Mens page CSS  */
+
+
+       
+.container {
+    margin: 0 30px;
+    display: flex;
+    position: relative;
+}
+
+.left-side {
+    position: fixed;
+    bottom: 0%;
+    left: 0;
+    width: 280px;
+    /* background-color: pink; */
+    overflow-y: scroll;
+    margin-top: 40px;
+    height: 380px;
+    z-index: 1;
+}
+
+.left-side h2 {
+    padding: 12px 30px;
+}
+
+.left-side ul li {
+    list-style: none;
+    margin-left: 50px;
+    padding: 7px 10px;
+}
+
+.left-side ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.right-side {
+    margin-left: 40px;
+}
+    
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+}
+.product-acc{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    /* margin-left: 10px; */
+}
+.product{
+    width: 320px;
+    height: 530px;
+    margin-bottom: 50px;
+    border-radius: .5rem;
+    box-shadow: 3px 3px 5px gray;
+}
+.product img{
+    width: 100%;
+}
+.detail{
+    display: none;
+    padding: 10px;
+}
+.product:hover .detail{
+    display: block;
+}
+.product:hover .pro{
+    display: none;
+}
+.pro {
+    padding: 10px;
+}
+
+.cloths{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+}
+
+.cloths img{
+    width: 100%;
+} 
+
+.wshoes{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+}
+
+.wshoes img{
+    width: 100%;
+} 
+.womenc{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+}
+
+.womwnc img{
+    width: 100%;
+} 
+.addtocart button{
+    margin-top: 12px;
+    padding: .2rem 1rem;
+    border: none;
+    background-color: black;
+    height: 40px;
+    color: white;
+    border-radius: 1rem;
+    margin-right: 10px;
+}
+.addtocart button:hover{
+    background-color: rgba(0, 0, 0, 0.306);
+}
+
+            /* Footer Css  */
+
+
+
+footer{
+    background-color: black;
+    padding-top: 20px;
+    /* position: relative; */
+}
+.pages{
+    margin-left: 396px;
+}
+.pages ul{
+    display: flex;
+}
+.pages ul li{
+    list-style: none;
+    margin: 24px 20px;
+    transition: all 1s;
+}
+.pages ul li:hover{
+    transform: scale(1.1);
+    
+}
+.pages ul li a{
+    text-decoration: none;
+    color: white;
+}    
+footer hr{
+    color: rgb(228, 203, 203);
+    width: 80%;
+    margin-left: 120px;
+    border-radius: 2px;
+}   
+.social{
+    margin-left: 555px;
+    margin-bottom: 30px;
+}     
+footer span{
+    color: white;
+}
+footer img{
+    height: 50px;
+    margin-top: 20px;
+}
+
+
+
+
+
+       /* Accessories page css  */
+
+
+.container-accessories{
+    margin: 0 70px;
+}
+.container-accessories h2{
+    padding: 10px 0 ;
+}
+.access{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    /* margin: 0 50px; */
+    gap: 40px;
+}
+.a-products h3{
+    padding: 5px 0;
+}
+.a-products img{
+    width: 100%;
+}
+.a-products button{
+    padding: 5px 7px;
+    border: none;
+    border-radius: 1rem;
+    background-color: transparent;
+    /* border: 1px solid black; */
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+.a-products button:hover{
+    background-color: rgba(0, 0, 0, 0.306);
+    /* transform: skew(0deg); */
+    /* border-radius: 0%; */
+    color: white;
+}
+.a-products:hover .detail{
+    display: block;
+}
+.a-products:hover .pro{
+    display: none;
+}
+
+
+
+
+/* Sign Up Form css  */
+.popup{
+    background: linear-gradient(45deg, black,white);
+    width: 100%;
+    height: auto;
+}   
+.popup-b{
+    background: linear-gradient(45deg, black,white);
+    width: 100%;
+    height: auto;
+}   
+
+.signup{
+    
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    width: 400px;
+    border: 1px solid black;
+    align-items: center;
+    margin: auto;
+    /* margin-top: 50px; */
+    background-color: rgba(210, 206, 206, 0.384);
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 25px ;
+    padding-bottom: 20px;
+}
+.signup h1{
+    color: white;
+    font-size: 2rem;
+    border-bottom: 4px solid rgba(225, 225, 225, 0.5);
+    margin: 20px;
+}
+
+#in{
+    padding: 12px;
+    margin: 5px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: -3px -3px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+}
+
+#submit{
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -3px -3px  rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: rgba(225, 225, 225, 0.1);
+    color: white;
+}
+
+.buy-form{
+    
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+    border: 1px solid black;
+    align-items: center;
+    margin: auto;
+    /* margin-top: 50px; */
+    background-color: rgba(210, 206, 206, 0.384);
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 25px ;
+    padding-bottom: 20px;
+}
+.buy-form h1{
+    color: white;
+    font-size: 2rem;
+    border-bottom: 4px solid rgba(225, 225, 225, 0.5);
+    margin: 20px;
+}
+
+
+.btn_type_1:hover{
+       background-color: rgb(0, 0, 0) !important;
+
+}
+
+
+  
+
+
+#buy{
+    display: none;
+    
+}
+
+
+
+
